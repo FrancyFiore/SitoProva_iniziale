@@ -1706,6 +1706,7 @@
 	#header-wrapper {
 		background: url("../../images/banner.jpg") center center;
 		background-size: cover;
+        height: 100vmin;
 	}
 
 		#header-wrapper:before {
@@ -1812,6 +1813,7 @@
 		font-weight: 900;
 		text-transform: uppercase;
 		color: #fff;
+        padding-top: 25vmin;
 	}
 
 	#logo p {
