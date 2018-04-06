@@ -2739,16 +2739,16 @@
 					top: -2.5em;
 					line-height: 2.5em;
 					margin-bottom: -2.5em;
-					margin-left: -5em;
+					margin-left: -4.8em;
 					padding-top: 0.5em;
 				}
         
             .title.due {
-                margin-left: -15em;
+                margin-left: -14.8em;
             }
         
             .title.tre {
-                margin-left: 5em;
+                margin-left: 5.2em;
             }
 
 					.wrapper .title:before, .wrapper .title:after {
