@@ -2732,23 +2732,23 @@
 				padding: 15px 15px 5em 15px;
 			}
 
-				.wrapper .title {
+			.wrapper .title {
 					font-size: 0.9em;
-					width: 18em;
+					width: 9.5em;
 					height: 2.5em;
 					top: -2.5em;
 					line-height: 2.5em;
 					margin-bottom: -2.5em;
-					margin-left: -9em;
+					margin-left: -5em;
 					padding-top: 0.5em;
 				}
         
             .title.due {
-                margin-left: -38.5em;
+                margin-left: -15em;
             }
         
             .title.tre {
-                margin-left: 13.5em;
+                margin-left: 5em;
             }
 
 					.wrapper .title:before, .wrapper .title:after {
