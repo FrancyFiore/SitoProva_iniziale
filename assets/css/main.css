@@ -1663,7 +1663,7 @@
 
 */
 
-.wrapper.style1 {
+        .wrapper.style1 {
 			background: #63c7d8 url("images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
@@ -2381,6 +2381,14 @@
 			#footer-wrapper hr {
 				margin: 3em 0 3em 0;
 			}
+        
+            .title.due {
+                margin-left: -38.5em;
+            }
+        
+            .title.tre {
+                margin-left: 13.5em;
+            }
 
 		/* Header */
 
@@ -2734,6 +2742,14 @@
 					margin-left: -9em;
 					padding-top: 0.5em;
 				}
+        
+            .title.due {
+                margin-left: -38.5em;
+            }
+        
+            .title.tre {
+                margin-left: 13.5em;
+            }
 
 					.wrapper .title:before, .wrapper .title:after {
 						height: 15px;
