@@ -51,6 +51,7 @@
 			$('#nav > ul').dropotron({
 				mode: 'fade',
 				noOpenerFade: true,
+                speed: 300, //Aggiunto
 				alignment: 'center',
 				detach: false
 			});
@@ -90,6 +91,73 @@
 				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
 					$('#titleBar, #navPanel, #page-wrapper')
 						.css('transition', 'none');
+        
+        //Mostra/Nascondi Azienda
+        $( "#aziendabtn" ).click(function() {
+            //$( "#aziendatxt" ).toggle();
+            $("#wrapperhome").removeClass('stylered');
+            $("#wrapperhome").removeClass('stylegreen');
+            $("#wrapperhome").addClass('stylecyan');
+            
+            
+            $("#Azienda").removeClass('hide-before');
+            $("#Azienda").removeClass('hide-after');
+            
+            $("#Lavorazioni").addClass('hide-before');
+            $("#Lavorazioni").addClass('hide-after');
+            
+            $("#Certificati").addClass('hide-before');
+            $("#Certificati").addClass('hide-after');
+            
+            
+            document.getElementById("aziendatxt").style.display = "block";
+            document.getElementById("lavorazionitxt").style.display = "none";
+            document.getElementById("certificatitxt").style.display = "none";
+        });
+        
+        //Mostra/Nascondi Lavorazioni
+        $( "#lavorazionibtn" ).click(function() {
+            $("#wrapperhome").addClass('stylered');
+            $("#wrapperhome").removeClass('stylegreen');
+            $("#wrapperhome").removeClass('stylecyan');
+            
+            
+            $("#Azienda").addClass('hide-before');
+            $("#Azienda").addClass('hide-after');
+            
+            $("#Lavorazioni").removeClass('hide-before');
+            $("#Lavorazioni").removeClass('hide-after');
+            
+            $("#Certificati").addClass('hide-before');
+            $("#Certificati").addClass('hide-after');
+            
+            
+            document.getElementById("aziendatxt").style.display = "none";
+            document.getElementById("lavorazionitxt").style.display = "block";
+            document.getElementById("certificatitxt").style.display = "none";
+        });
+        
+        //Mostra/Nascondi Certificati
+        $( "#certificatibtn" ).click(function() {
+            $("#wrapperhome").removeClass('stylered');
+            $("#wrapperhome").addClass('stylegreen');
+            $("#wrapperhome").removeClass('stylecyan');
+            
+            
+            $("#Azienda").addClass('hide-before');
+            $("#Azienda").addClass('hide-after');
+            
+            $("#Lavorazioni").addClass('hide-before');
+            $("#Lavorazioni").addClass('hide-after');
+            
+            $("#Certificati").removeClass('hide-before');
+            $("#Certificati").removeClass('hide-after');
+            
+            
+            document.getElementById("aziendatxt").style.display = "none";
+            document.getElementById("lavorazionitxt").style.display = "none";
+            document.getElementById("certificatitxt").style.display = "block";
+        });
 
 	});
 

@@ -1485,42 +1485,6 @@
         text-align: center;
     }
 
-    .wrapper .title {
-			position: absolute;
-			top: 0;
-			left: 50%;
-			text-align: center;
-			text-transform: uppercase;
-			display: block;
-			font-weight: 700;
-			letter-spacing: 0.25em;
-		}
-
-			.wrapper .title:before {
-				content: '';
-				position: absolute;
-				bottom: -38px;
-				left: -35px;
-				width: 35px;
-				width: 35px;
-				height: 38px;
-				/*background: url("images/shadow.png");*/
-			}
-
-			.wrapper .title:after {
-				-moz-transform: scaleX(-1);
-				-webkit-transform: scaleX(-1);
-				-ms-transform: scaleX(-1);
-				transform: scaleX(-1);
-				content: '';
-				position: absolute;
-				bottom: -38px;
-				right: -35px;
-				width: 35px;
-				height: 38px;
-				/*background: url("images/shadow.png");*/
-			}
-
 /* List */
 
 	ul.default {
@@ -1644,72 +1608,88 @@
 				background: url("images/shadow.png");
 			}
 
-		/*.wrapper.style1 {
-			/*background: #e97770 url("images/overlay.png");*/ 
-        /*    background: #f3f3f3 url("images/overlay.png");
+        .hide-before:before{
+            display: none;
+        }
+
+        .hide-after:after{
+            display: none;
+        }
+
+        /* Rosso */
+		.wrapper.stylered {
+			background: #e97770 url("images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
-			.wrapper.style1 .title {
-				background: #4c43b9 url("images/overlay.png");
-				color: #fff;
-			}
+        .wrapper.stylered .title {
+            background: #e97770 url("images/overlay.png");
+            color: #fff;
+        }
 
-			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6, .wrapper.style1 strong, .wrapper.style1 b, .wrapper.style1 a {
-				color: #fff;
-			}
+        .wrapper.stylered h1, .wrapper.stylered h2, .wrapper.stylered h3, .wrapper.stylered h4, .wrapper.stylered h5, .wrapper.stylered h6, .wrapper.stylered strong, .wrapper.stylered b, .wrapper.stylered a {
+            color: #fff;
+        }
 
 
-*/
-
-        .wrapper.style1 {
+        /* Blu */
+        .wrapper.stylecyan {
 			background: #63c7d8 url("images/overlay.png");
-			color: #eee;
+            color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
-			.wrapper.style1 .title {
+			.wrapper.stylecyan .title {
 				background: #63c7d8 url("images/overlay.png");
 				color: #fff;
 			}
 
-			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6, .wrapper.style1 strong, .wrapper.style1 b, .wrapper.style1 a {
-				color: #fff;
-			}
 
-
-
-        .wrapper.stylenuovo {
-			/*background: #e97770 url("images/overlay.png");*/ 
-            background: #f3f3f3 url("images/overlay.png");
-			color: rgba(23, 23, 23, 0.75);
-		}
-
-			.wrapper.stylenuovo .title {
-				background: #4c43b9 url("images/overlay.png");
-				color: #fff;
-			}
-
-			.wrapper.stylenuovo h1, .wrapper.stylenuovo h2, .wrapper.stylenuovo h3, .wrapper.stylenuovo h4, .wrapper.stylenuovo h5, .wrapper.stylenuovo h6, .wrapper.stylenuovo strong, .wrapper.stylenuovo b, .wrapper.stylenuovo a {
-				color: #fff;
-			}
-
-        .wrapper.stylelavorazione {
-            background: #e97770 url("images/overlay.png");
+        /* Verde */
+        .wrapper.stylegreen {
+			background: #6ac48c url("images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
-			.wrapper.stylelavorazione .title {
-				background: #e97770 url("images/overlay.png");
-				color: #fff;
-			}
+        .wrapper.stylegreen .title {
+            background: #6ac48c url("images/overlay.png");
+            color: #fff;
+        }
 
-			.wrapper.stylelavorazione h1, .wrapper.stylelavorazione h2, .wrapper.stylelavorazione h3, .wrapper.stylelavorazione h4, .wrapper.stylelavorazione h5, .wrapper.stylelavorazione h6, .wrapper.stylelavorazione strong, .wrapper.stylelavorazione b, .wrapper.stylelavorazione a {
-				color: #fff;
-			}
 
+        /* Override per i colori delle etichette */
+        #Azienda {
+            background: #63c7d8 url("images/overlay.png");
+        }
+
+        #Lavorazioni {
+            background: #e97770 url("images/overlay.png");
+        }
+        
+        #Certificati {
+            background: #6ac48c url("images/overlay.png");
+        }
+
+        #Azienda a {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #Lavorazioni a {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #Certificati a {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    
 
 		.wrapper.style2 {
 			background: #fff;
