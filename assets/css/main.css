@@ -2356,6 +2356,14 @@
 			#intro-wrapper {
 				padding-bottom: 8em;
 			}
+        
+            .hide-before:before{
+                display: none;
+            }
+
+            .hide-after:after{
+                display: none;
+            }
 
 		/* Header */
 
@@ -2680,6 +2688,14 @@
         
             .title.tre {
                 margin-left: 13.5em;
+            }
+        
+            .hide-before:before{
+                display: none;
+            }
+
+            .hide-after:after{
+                display: none;
             }
 
 		/* Header */
@@ -3043,11 +3059,19 @@
                 margin-left: 5.2em;
             }
 
-					.wrapper .title:before, .wrapper .title:after {
-						height: 15px;
-						bottom: -15px;
-						background-size: 100% 100%;
-					}
+            .wrapper .title:before, .wrapper .title:after {
+                height: 15px;
+                bottom: -15px;
+                background-size: 100% 100%;
+            }
+        
+            .hide-before:before{
+                display: none;
+            }
+
+            .hide-after:after{
+                display: none;
+            }
 
 			#header-wrapper {
 				padding: 6em 2em 6em 2em;
