@@ -82,7 +82,7 @@
 
                 -->
             
-			<!-- Azienda -->
+			<!-- Home -->
             
 				<div id="wrapperhome" class="wrapper stylecyan">
                     
@@ -92,6 +92,7 @@
                     
                     <section id="main">
                         
+                        <!-- Azienda -->
                         <div id="aziendatxt">
                             <section id="features">
                                 <header class="style3">
@@ -100,7 +101,9 @@
                                 </header>
                             </section>
                         </div>
+                
                         
+                        <!-- Lavorazione -->
                         <div id="lavorazionitxt" style="display: none">
                             <section id="features">
                                 <header class="style3">
@@ -108,13 +111,14 @@
 									<p class="centrato">IDEALSTILE dal 1987 opera nel settore delle finiture di interni a secco e nei rivestimenti esterni di facciata. IDEALSTILE  e’ sempre  stata molto attenta ad offrire  ai propri clienti servizio e professionalita’ e per questo si e’ dotata di tutti gli strumenti necessari per conseguire questo obbiettivo : dai mezzi di trasporto iper attrezzati per i propri dipendenti ( l’azienda dispone infatti su un parco macchine di oltre 20 furgoni di proprieta’, dalle piu’ moderne piattaforme aeree e attrezzature per la posa in opera dei propri materiali, da una rete  informatica per  lo svolgimento delle pratiche amministrative, contabilita’ e costi dei  cantieri, certificazioni antincendio,  ecc e da uno studio tecnico interno per la progettazione delle lavorazioni. IDEALSTILE e’ sempre stata attenta e ha sempre investito molto nella costante formazione  dei propri dipendenti per la sicurezza nel lavoro. IDEALSTILE dall'anno 2007 è certificata ISO 9001-2000.</p>
 								</header>
 								<ul class="actions actions-centered">
-									<li><a href="#" class="button style1">Più info</a></li>
+									<li><a href="#" class="button style3">Più info</a></li>
 								</ul>
                             </section>
                         </div>
                         
+                        
+                        <!-- Certificati -->
                         <div id="certificatitxt" style="display: none">
-                            
                             <div id="highlights" class="container">
                                 <div class="row 150%">
                                     <div class="4u 12u(mobile)">
@@ -149,8 +153,9 @@
                                     </div>
                                 </div>
 					       </div>
-                            
                         </div>
+
+                        
                         
                     </section>
 				</div>
@@ -216,13 +221,13 @@
             
 			<!-- Footer -->
 				<div id="footer-wrapper" class="wrapper">
-					<div class="title">Dis Cras At Ut</div>
+					<div class="title">Contattaci</div>
 					<div id="footer" class="container">
 						<header class="style1">
-							<h2>Ipsum sapien elementum portitor?</h2>
+							<h2>Hai bisongo di informazioni?</h2>
 							<p>
-								Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis nunc in aliquet.<br />
-								Nam pharetra laoreet imperdiet volutpat etiam consequat feugiat.
+								Saremo lieti di rispondere alle tue domande.<br />
+								Compila il form, ti ricontatteremo al più presto.
 							</p>
 						</header>
 						<hr />
@@ -231,29 +236,41 @@
 
 								<!-- Contact Form -->
 									<section>
-										<form method="post" action="#">
+                                        
+                                        <form id="ajax-contact" method="post" action="https://formspree.io/iperfrancy@gmail.com">
 											<div class="row 50%">
-												<div class="6u 12u(mobile)">
-													<input type="text" name="name" id="contact-name" placeholder="Name" />
-												</div>
-												<div class="6u 12u(mobile)">
-													<input type="text" name="email" id="contact-email" placeholder="Email" />
-												</div>
-											</div>
-											<div class="row 50%">
+                                                
 												<div class="12u">
-													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+													<input type="text" name="nome" id="contact-nome" placeholder="Nome" required/>
+												</div>
+                                                
+                                                <div class="12u">
+													<input type="text" name="città" id="contact-città" placeholder="Città" required/>
+												</div>
+                                                
+                                                <div class="12u">
+													<input type="text" name="telefono" id="contact-telefono" placeholder="Telefono" required/>
+												</div>
+                                                
+                                                <div class="12u">
+													<input type="text" name="email" id="contact-email" placeholder="Email" required/>
+												</div>
+										
+												<div class="12u">
+													<textarea name="messaggio" id="contact-messaggio" placeholder="Messaggio" rows="4" required></textarea>
 												</div>
 											</div>
+                                            
 											<div class="row">
 												<div class="12u">
 													<ul class="actions">
-														<li><input type="submit" class="style1" value="Send" /></li>
-														<li><input type="reset" class="style2" value="Reset" /></li>
+														<li><input type="submit" class="style1" value="Invia" /></li>
+														<li><input type="reset" class="style2" value="Cancella" /></li>
 													</ul>
 												</div>
 											</div>
 										</form>
+                                        
 									</section>
 
 							</div>
@@ -264,11 +281,31 @@
 										<div class="row">
 											<div class="6u 12u(mobile)">
 												<section>
-													<h3 class="icon fa-home">Mailing Address</h3>
+													<h3 class="icon fa-home">Indirizzo</h3>
+													<p>Idealstile srl<br />
+												        31058, Via dei Colli 165<br />
+                                                        Susegana<br />
+														Veneto, TV (Italia)
+													</p>
+												</section>
+											</div>
+                                            <div class="6u 12u(mobile)">
+												<section>
+													<h3 class="icon fa-phone">Telefono</h3>
+													<p>+39 0438 451052</p>
+                                                </section>
+                                                <section>
+                                                    <h3 class="icon fa-fax">Fax</h3>
+                                                    <p>+39 0438 450449</p>
+												</section>
+											</div>
+										</div>
+										<div class="row">
+											<div class="6u 12u(mobile)">
+												<section>
+													<h3 class="icon fa-envelope">Email</h3>
 													<p>
-														Untitled Corporation<br />
-														1234 Somewhere Rd #987<br />
-														Nashville, TN 00000-0000
+														<a href="#">info@idealstile.com</a>
 													</p>
 												</section>
 											</div>
@@ -283,24 +320,6 @@
 												</section>
 											</div>
 										</div>
-										<div class="row">
-											<div class="6u 12u(mobile)">
-												<section>
-													<h3 class="icon fa-envelope">Email</h3>
-													<p>
-														<a href="#">info@untitled.tld</a>
-													</p>
-												</section>
-											</div>
-											<div class="6u 12u(mobile)">
-												<section>
-													<h3 class="icon fa-phone">Phone</h3>
-													<p>
-														(000) 555-0000
-													</p>
-												</section>
-											</div>
-										</div>
 									</section>
 
 							</div>
@@ -309,7 +328,7 @@
 					</div>
 					<div id="copyright">
 						<ul>
-							<li>&copy; Untitled</li>
+							<li>&copy; IDEALSTILE  -  Via dei Colli 165, 31058, Susegana (TV)  -  Tel. 0438 451052  -  Design: Francesco Fiorelli  -  <a id="Privacy">Privacy</a>  -  P.Iva e C.F. 02297710267</li>
 						</ul>
 					</div>
 				</div>

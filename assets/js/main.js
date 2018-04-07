@@ -19,7 +19,17 @@
 				}
 			}
 		});
+    
+    
+    // Durante Caricamento
+    $("#Lavorazioni").addClass('hide-before');
+    $("#Lavorazioni").addClass('hide-after');
+            
+    $("#Certificati").addClass('hide-before');
+    $("#Certificati").addClass('hide-after');
 
+    
+    
 	$(function() {
 
 		var	$window = $(window),
@@ -93,7 +103,7 @@
 						.css('transition', 'none');
         
         //Mostra/Nascondi Azienda
-        $( "#aziendabtn" ).click(function() {
+        $("#aziendabtn").click(function() {
             //$( "#aziendatxt" ).toggle();
             $("#wrapperhome").removeClass('stylered');
             $("#wrapperhome").removeClass('stylegreen');
@@ -116,7 +126,7 @@
         });
         
         //Mostra/Nascondi Lavorazioni
-        $( "#lavorazionibtn" ).click(function() {
+        $("#lavorazionibtn").click(function() {
             $("#wrapperhome").addClass('stylered');
             $("#wrapperhome").removeClass('stylegreen');
             $("#wrapperhome").removeClass('stylecyan');
@@ -138,7 +148,7 @@
         });
         
         //Mostra/Nascondi Certificati
-        $( "#certificatibtn" ).click(function() {
+        $("#certificatibtn").click(function() {
             $("#wrapperhome").removeClass('stylered');
             $("#wrapperhome").addClass('stylegreen');
             $("#wrapperhome").removeClass('stylecyan');
@@ -157,6 +167,29 @@
             document.getElementById("aziendatxt").style.display = "none";
             document.getElementById("lavorazionitxt").style.display = "none";
             document.getElementById("certificatitxt").style.display = "block";
+        });
+        
+        $("#Privacy").click(function() {
+            
+        });
+        
+        // Lightbox gallery.
+        $window.on('load', function() {
+
+            $('#two').poptrox({
+                caption: function($a) { return $a.next('h3').text(); },
+                overlayColor: '#2c2c2c',
+                overlayOpacity: 0.85,
+                popupCloserText: '',
+                popupLoaderText: '',
+                selector: '.work-item a.image',
+                usePopupCaption: true,
+                usePopupDefaultStyling: false,
+                usePopupEasyClose: false,
+                usePopupNav: true,
+                windowMargin: (skel.breakpoint('small').active ? 0 : 50)
+            });
+
         });
 
 	});
