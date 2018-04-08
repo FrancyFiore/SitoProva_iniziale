@@ -3112,6 +3112,10 @@
             .title.tre {
                 margin-left: 5.2em;
             }
+		
+		.etichetta{
+            		padding: 0 0 30px 0;    
+       		 }
 
             .wrapper .title:before, .wrapper .title:after {
                 height: 15px;
