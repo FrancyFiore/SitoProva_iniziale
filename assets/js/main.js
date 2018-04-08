@@ -22,6 +22,8 @@
     
     
     // Durante Caricamento
+    $("#Azienda").addClass('etichetta');
+    
     $("#Lavorazioni").addClass('hide-before');
     $("#Lavorazioni").addClass('hide-after');
             
@@ -105,19 +107,21 @@
         //Mostra/Nascondi Azienda
         $("#aziendabtn").click(function() {
             //$( "#aziendatxt" ).toggle();
-            $("#wrapperhome").removeClass('stylered');
-            $("#wrapperhome").removeClass('stylegreen');
-            $("#wrapperhome").addClass('stylecyan');
-            
+            //$("#wrapperhome").removeClass('stylecyan');
+            //$("#wrapperhome").removeClass('stylered');
+            //$("#wrapperhome").addClass('stylegreen');
             
             $("#Azienda").removeClass('hide-before');
             $("#Azienda").removeClass('hide-after');
+            $("#Azienda").addClass('etichetta');
             
             $("#Lavorazioni").addClass('hide-before');
             $("#Lavorazioni").addClass('hide-after');
+            $("#Lavorazioni").removeClass('etichetta');
             
             $("#Certificati").addClass('hide-before');
             $("#Certificati").addClass('hide-after');
+            $("#Certificati").removeClass('etichetta');
             
             
             document.getElementById("aziendatxt").style.display = "block";
@@ -127,19 +131,19 @@
         
         //Mostra/Nascondi Lavorazioni
         $("#lavorazionibtn").click(function() {
-            $("#wrapperhome").addClass('stylered');
-            $("#wrapperhome").removeClass('stylegreen');
-            $("#wrapperhome").removeClass('stylecyan');
-            
             
             $("#Azienda").addClass('hide-before');
             $("#Azienda").addClass('hide-after');
+            $("#Azienda").removeClass('etichetta');
+            
             
             $("#Lavorazioni").removeClass('hide-before');
             $("#Lavorazioni").removeClass('hide-after');
+            $("#Lavorazioni").addClass('etichetta');
             
             $("#Certificati").addClass('hide-before');
             $("#Certificati").addClass('hide-after');
+            $("#Certificati").removeClass('etichetta');
             
             
             document.getElementById("aziendatxt").style.display = "none";
@@ -149,19 +153,18 @@
         
         //Mostra/Nascondi Certificati
         $("#certificatibtn").click(function() {
-            $("#wrapperhome").removeClass('stylered');
-            $("#wrapperhome").addClass('stylegreen');
-            $("#wrapperhome").removeClass('stylecyan');
-            
             
             $("#Azienda").addClass('hide-before');
             $("#Azienda").addClass('hide-after');
+            $("#Azienda").removeClass('etichetta');
             
             $("#Lavorazioni").addClass('hide-before');
             $("#Lavorazioni").addClass('hide-after');
+            $("#Lavorazioni").removeClass('etichetta');
             
             $("#Certificati").removeClass('hide-before');
             $("#Certificati").removeClass('hide-after');
+            $("#Certificati").addClass('etichetta');
             
             
             document.getElementById("aziendatxt").style.display = "none";

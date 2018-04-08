@@ -1485,6 +1485,10 @@
         text-align: center;
     }
 
+    .colore, #lavorazionitxt .colore{
+        color: #2f333b;
+    }
+
 /* List */
 
 	ul.default {
@@ -1586,7 +1590,7 @@
 			.wrapper .title:before {
 				content: '';
 				position: absolute;
-				bottom: -38px;
+				bottom: -8px; /* -38 senza padding */
 				left: -35px;
 				width: 35px;
 				width: 35px;
@@ -1601,7 +1605,7 @@
 				transform: scaleX(-1);
 				content: '';
 				position: absolute;
-				bottom: -38px;
+				bottom: -8px; /* -38 senza padding */
 				right: -35px;
 				width: 35px;
 				height: 38px;
@@ -1618,13 +1622,14 @@
 
         /* Rosso */
 		.wrapper.stylered {
-			background: #e97770 url("images/overlay.png");
+			/*background: #e97770 url("images/overlay.png");*/
+			background: #e31e25 url("images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
         .wrapper.stylered .title {
-            background: #e97770 url("images/overlay.png");
+            background: #e31e25 url("images/overlay.png");
             color: #fff;
         }
 
@@ -1635,16 +1640,16 @@
 
         /* Blu */
         .wrapper.stylecyan {
-			background: #63c7d8 url("images/overlay.png");
+			/*background: #63c7d8 url("images/overlay.png");*/
+			background: #3c3f8c url("images/overlay.png");
             color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.stylecyan .title {
-				background: #63c7d8 url("images/overlay.png");
+				background: #3c3f8c url("images/overlay.png");
 				color: #fff;
 			}
-
 
         /* Verde */
         .wrapper.stylegreen {
@@ -1658,8 +1663,33 @@
             color: #fff;
         }
 
+        /* Giallo */
+        .wrapper.styleyellow {
+			background: #ffe11a url("images/overlay.png");
+			color: #eee;
+			color: rgba(255, 255, 255, 0.75);
+		}
+
+        .wrapper.styleyellow .title {
+            background: #ffe11a url("images/overlay.png");
+            color: #fff;
+        }
+
+        /* Bianco */
+        .wrapper.stylewhite {
+			background: #fff url("images/overlay.png");
+			color: #eee;
+			color: rgba(255, 255, 255, 0.75);
+		}
+
+        .wrapper.stylewhite .title {
+            background: #fff url("images/overlay.png");
+            color: #fff;
+        }
+        
 
         /* Override per i colori delle etichette */
+        /*
         #Azienda {
             background: #63c7d8 url("images/overlay.png");
         }
@@ -1670,6 +1700,19 @@
         
         #Certificati {
             background: #6ac48c url("images/overlay.png");
+        }
+        */
+
+        #Azienda {
+            background: #3c3f8c url("images/overlay.png");
+        }
+
+        #Lavorazioni {
+            background: #e31e25 url("images/overlay.png");
+        }
+        
+        #Certificati {
+            background: #ffe11a url("images/overlay.png");
         }
 
         #Azienda a {
@@ -1688,6 +1731,10 @@
             color: #fff;
             text-decoration: none;
             cursor: pointer;
+        }
+
+        .etichetta{
+            padding: 0 0 70px 0;    
         }
 
 		.wrapper.style2 {
@@ -1850,9 +1897,15 @@
 		text-align: center;
 	}
 
-		#highlights .highlight h3 {
-			color: #e97770;
-		}
+		/*
+    #highlights .highlight h3 {
+        color: #e97770;
+    }
+*/
+
+     #highlights .highlight h3 {
+        color: #2f333b;
+    }
 
 /* Copyright */
 
@@ -2501,7 +2554,8 @@
 					}
 
 					#nav li.current a {
-						background: #7ddde0 url("images/overlay2.png");
+						/*background: #7ddde0 url("images/overlay2.png");*/
+						background: #3c3f8c url("images/overlay2.png");
 						color: #fff;
 					}
 
