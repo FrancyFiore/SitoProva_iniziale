@@ -29,8 +29,6 @@
             
     $("#Certificati").addClass('hide-before');
     $("#Certificati").addClass('hide-after');
-
-    
     
 	$(function() {
 
@@ -177,23 +175,24 @@
         });
         
         // Lightbox gallery.
-        $window.on('load', function() {
+				$window.on('load', function() {
+                    
+                    //$('#gallery, #gallery2').poptrox({
+					$('.gallery').poptrox({
+						caption: function($a) { return $a.nextAll('text').text(); },
+						overlayColor: '#2c2c2c',
+						overlayOpacity: 0.85,
+						popupCloserText: '',
+						popupLoaderText: '',
+						selector: '.work-item a.image',
+						usePopupCaption: true,
+						usePopupDefaultStyling: false,
+						usePopupEasyClose: false,
+						usePopupNav: true,
+						
+					});
 
-            $('#two').poptrox({
-                caption: function($a) { return $a.next('h3').text(); },
-                overlayColor: '#2c2c2c',
-                overlayOpacity: 0.85,
-                popupCloserText: '',
-                popupLoaderText: '',
-                selector: '.work-item a.image',
-                usePopupCaption: true,
-                usePopupDefaultStyling: false,
-                usePopupEasyClose: false,
-                usePopupNav: true,
-                windowMargin: (skel.breakpoint('small').active ? 0 : 50)
-            });
-
-        });
+				});
 
 	});
 
