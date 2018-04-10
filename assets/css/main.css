@@ -3003,6 +3003,10 @@
 
 /* Mobile Only */
 
+    .hide-mobile{
+        display: none;
+    }
+
 	#navPanel, #titleBar {
 		display: none;
 	}
@@ -3323,7 +3327,7 @@
 
 			.wrapper .title {
 					font-size: 0.9em;
-					width: 9.5em;
+					width: 16.5em;
 					height: 2.5em;
 					top: -2.5em;
 					line-height: 2.5em;
