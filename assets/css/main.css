@@ -3327,7 +3327,7 @@
 
 			.wrapper .title {
 					font-size: 0.9em;
-					width: 16.5em;
+					width: 9.5em;
 					height: 2.5em;
 					top: -2.5em;
 					line-height: 2.5em;
@@ -3343,6 +3343,11 @@
             .title.tre {
                 margin-left: 5.2em;
             }
+            
+        .title.Lavorazioni{
+            width: 16.5em;
+            margin-left: -8.3em;
+        }
         
             #Azienda a {
                 color: #fff;
