@@ -1,9 +1,9 @@
 <?php
-$name = $_POST['contact-nome'];
-$city = $_POST['contact-città'];
-$phone = $_POST['contact-telefono'];
-$email = $_POST['contact-email'];
-$message = $_POST['contact-messaggio'];
+$name = $_POST['nome'];
+$city = $_POST['città'];
+$phone = $_POST['telefono'];
+$email = $_POST['email'];
+$message = $_POST['messaggio'];
 $formcontent=" From: $name \n Città: $city \n Phone: $phone \n Email: $email \n Message: $message";
 $recipient = "YOUREMAIL@HERE.COM";
 $subject = "Contact Form";
