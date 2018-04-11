@@ -2122,10 +2122,11 @@
 		box-sizing: content-box;
 		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 		background: #fff;
-		border-radius: 0.35em;
+		/*border-radius: 0.35em;*/
 		box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.15);
-		overflow: hidden;
-		padding-bottom: 3em;
+		/*overflow: hidden;*/
+		/*padding-bottom: 3em;*/
+        left: -7%;
 	}
 
 		.poptrox-popup .loader {
@@ -2136,7 +2137,7 @@
 			animation: spin 1s linear infinite;
 			font-size: 1.5em;
 			height: 1em;
-			left: 50%;
+			left: 45%;
 			line-height: 1em;
 			margin: -0.5em 0 0 -0.5em;
 			position: absolute;
@@ -2157,6 +2158,7 @@
 				content: '\f1ce';
 			}
 
+        /*
 		.poptrox-popup .caption {
 			background: #fff;
 			bottom: 0;
@@ -2170,6 +2172,49 @@
 			width: 100%;
 			z-index: 1;
 		}
+            */
+        
+        /* Sotto-Grande */
+        /*
+        .poptrox-popup .caption {
+			background: #fff;
+			bottom: -11em;
+			cursor: default;
+			font-size: 0.9em;
+			height: 14em;
+			left: 0;
+			line-height: 2em;
+			position: absolute;
+			text-align: center;
+			width: 100%;
+			z-index: 1;
+            border-radius: 0.35em;
+		} 
+
+        */
+
+        /* Destra*/
+        
+         .poptrox-popup .caption {
+			background: #fff;
+			bottom: 0;
+			cursor: default;
+			font-size: 0.9em;
+			height: 100%;
+            width: 50%;
+			left: 100%;
+			line-height: 2.8em;
+			position: absolute;
+			/*text-align: center;*/
+            text-align: left;
+             padding-left: 10px;
+			z-index: 1;
+            /*border-radius: 0.35em;*/
+		}
+
+        .inlinea{
+            display: inline;
+        }
 
 		.poptrox-popup .nav-next,
 		.poptrox-popup .nav-previous {
@@ -2182,7 +2227,9 @@
 			background: rgba(0, 0, 0, 0.01);
 			cursor: pointer;
 			height: 100%;
-			opacity: 0;
+			/*opacity: 0;*/
+			opacity: 0.5;
+            mix-blend-mode: difference;
 			position: absolute;
 			top: 0;
 			width: 50%;
@@ -2239,7 +2286,9 @@
 			color: #fff;
 			height: 4em;
 			line-height: 4em;
-			opacity: 0;
+			/*opacity: 0;*/
+			opacity: 0.5;
+            mix-blend-mode: difference;
 			position: absolute;
 			right: 0;
 			text-align: center;
@@ -3495,14 +3544,37 @@
         
         /* Poptrox */
 
-			.poptrox-popup {
-				border-radius: 0;
-			}
+        
+        /* Sotto-Grande */
+        
+        .poptrox-popup .caption {
+			background: #fff;
+			bottom: -19em;
+			cursor: default;
+			font-size: 0.9em;
+			height: 22em;
+			left: 0;
+			line-height: 2em;
+			position: absolute;
+			text-align: left;
+			width: 100%;
+			z-index: 1;
+            /*border-radius: 0.35em;*/
+            border-bottom-left-radius: 0.35em;
+            border-bottom-right-radius: 0.35em;
+		} 
 
-				.poptrox-popup .nav-next:before,
-				.poptrox-popup .nav-previous:before {
-					margin-top: -1em;
-				}
+        .poptrox-popup {
+            border-radius: 0;
+            /* Aggiunta */
+            top: -8em;
+            left: 0;
+        }
+
+            .poptrox-popup .nav-next:before,
+            .poptrox-popup .nav-previous:before {
+                margin-top: -1em;
+            }
         
         /* Image */
         .image.featured {

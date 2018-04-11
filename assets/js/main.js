@@ -170,16 +170,16 @@
             document.getElementById("certificatitxt").style.display = "block";
         });
         
-        $("#Privacy").click(function() {
-            
-        });
+        //$("#Privacy").click(function() {
+        
+        // });
         
         // Lightbox gallery.
 				$window.on('load', function() {
                     
                     //$('#gallery, #gallery2').poptrox({
 					$('.gallery').poptrox({
-						caption: function($a) { return $a.nextAll('text').text(); },
+						caption: function($a) { return $a.nextAll('text').html(); },
 						overlayColor: '#2c2c2c',
 						overlayOpacity: 0.85,
 						popupCloserText: '',
