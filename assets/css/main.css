@@ -2127,6 +2127,8 @@
 		/*overflow: hidden;*/
 		/*padding-bottom: 3em;*/
         left: -7%;
+        border-bottom-left-radius: 0.35em;
+        border-top-left-radius: 0.35em;
 	}
 
 		.poptrox-popup .loader {
@@ -2210,6 +2212,8 @@
              padding-left: 10px;
 			z-index: 1;
             /*border-radius: 0.35em;*/
+            border-top-right-radius: 0.35em;
+            border-bottom-right-radius: 0.35em;
 		}
 
         .inlinea{
@@ -3569,6 +3573,8 @@
             /* Aggiunta */
             top: -8em;
             left: 0;
+            border-top-left-radius: 0.35em;
+            border-bottom-right-radius: 0.35em;
         }
 
             .poptrox-popup .nav-next:before,

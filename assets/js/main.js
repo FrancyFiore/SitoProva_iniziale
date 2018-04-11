@@ -174,6 +174,12 @@
         
         // });
         
+        
+        // Scrolly.
+			$('.scrolly').scrolly({
+				offset: function() { return $("footer-wrapper").height(); }
+			});
+        
         // Lightbox gallery.
 				$window.on('load', function() {
                     
