@@ -2955,6 +2955,11 @@
                 margin-left: 13.5em;
             }
         
+            .title.lavorazioni{
+                width: 16.5em;
+                margin-left: -8.3em;
+            }
+        
             .hide-before:before{
                 display: none;
             }
@@ -3344,10 +3349,10 @@
                 margin-left: 5.2em;
             }
             
-        .title.lavorazioni{
-            width: 16.5em;
-            margin-left: -8.3em;
-        }
+            .title.lavorazioni{
+                width: 16.5em;
+                margin-left: -8.3em;
+            }
         
             #Azienda a {
                 color: #fff;
