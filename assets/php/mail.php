@@ -1,5 +1,6 @@
 <?php
 $nome = $_POST['nome'];
+debug_to_console( $nome );
 $citta = $_POST['citta'];
 $telefono = $_POST['telefono'];
 $email = $_POST['email'];
